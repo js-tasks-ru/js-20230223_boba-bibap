@@ -13,7 +13,7 @@ const obj = {
 
 
 
- const pick = (obj, ...fields) => {
+ export const pick = (obj, ...fields) => {
 
     const newObj = {}
 
