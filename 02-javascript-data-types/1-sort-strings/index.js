@@ -6,7 +6,7 @@
  * 
  */
 export function sortStrings(strings, order = 'asc') {
-    let [newArr, locale] = [[...strings], ['ru-u-kf-upper', 'en-US-u-kf-upper']];
+    const [newArr, locale] = [[...strings], ['ru-u-kf-upper', 'en-US-u-kf-upper']];
 
     if (order === 'asc') {
         return newArr.sort((a, b) => a.localeCompare(b, locale));
@@ -15,9 +15,3 @@ export function sortStrings(strings, order = 'asc') {
     }
     return newArr;
 }
-
-
-sortStrings(['b', 'a', 'c'], 'asc');
-sortStrings(['b', 'a', 'c'], 'desc');
-sortStrings(['абрикос', 'Абрикос', 'яблоко', 'Яблоко', 'ёжик', 'Ёжик'], 'asc');
-
