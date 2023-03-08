@@ -25,4 +25,14 @@ const obj = {
     return newObj;
 };
 
-console.log(pick(obj, "ball", "pencil"));
+pick(obj, "ball", "pencil");
+
+const object = {
+    name: "nikita",
+    sur: "kov",
+}
+
+for (const key in object) {
+    console.log(key)
+    console.log(object[key])
+}

@@ -17,6 +17,3 @@ return Object.fromEntries(Object.entries(obj).filter(([key]) => !fields.includes
 
 };
 
-
-
-omit(obj, "ball", "pencil");
